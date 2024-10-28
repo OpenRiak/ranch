@@ -65,6 +65,9 @@ parse(_) ->
 	{error, 'The PROXY protocol header signature was not recognized. (PP 2.1, PP 2.2)'}.
 
 -ifdef(TEST).
+
+-include_lib("eunit/include/eunit.hrl").
+
 parse_unrecognized_header_test() ->
 	{error, _} = parse(<<"GET / HTTP/1.1\r\n">>),
 	ok.
@@ -167,6 +170,9 @@ parse_port(Port0, Rest) ->
 	end.
 
 -ifdef(TEST).
+
+-include_lib("eunit/include/eunit.hrl").
+
 parse_v1_test() ->
 	%% Examples taken from the PROXY protocol header specification.
 	{ok, #{
@@ -372,6 +378,9 @@ parse_v2(_, _, _, _, _) ->
 	{error, 'Invalid length in the PROXY protocol binary header. (PP 2.2)'}.
 
 -ifdef(TEST).
+
+-include_lib("eunit/include/eunit.hrl").
+
 parse_v2_test() ->
 	%% Test cases taken from tomciopp/proxy_protocol.
 	{ok, #{
@@ -741,6 +750,9 @@ raw_tlvs(Info) ->
 	end || {Type, Bin} <- maps:get(raw_tlvs, Info, [])].
 
 -ifdef(TEST).
+
+-include_lib("eunit/include/eunit.hrl").
+
 v1_test() ->
 	Test1 = #{
 		version => 1,
@@ -939,6 +951,9 @@ to_connection_info(_) ->
 	[].
 
 -ifdef(TEST).
+
+-include_lib("eunit/include/eunit.hrl").
+
 to_connection_info_test() ->
 	Common = #{
 		version => 2,

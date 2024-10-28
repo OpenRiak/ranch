@@ -100,6 +100,9 @@ do_crc32c(OldCrc, <<>>) ->
 	OldCrc bxor 16#ffffffff.
 
 -ifdef(TEST).
+
+-include_lib("eunit/include/eunit.hrl").
+
 crc32c_test_() ->
 	Tests = [
 		%% Tests from RFC3720 B.4.

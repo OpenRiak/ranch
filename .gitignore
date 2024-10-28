@@ -15,3 +15,5 @@ examples/*/*.d
 examples/*/_rel
 logs
 test/*.beam
+_build
+rebar.lock
