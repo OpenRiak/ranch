@@ -21,8 +21,8 @@ to close any of the currently opened sockets.
 
 ## Online documentation
 
-- https://ninenines.eu/docs/en/ranch/2.1/guide[User guide]
-- https://ninenines.eu/docs/en/ranch/2.1/manual[Function reference]
+- [User guide](https://ninenines.eu/docs/en/ranch/2.1/guide)
+- [Function reference](https://ninenines.eu/docs/en/ranch/2.1/manual)
 
 ## Offline documentation
 
@@ -35,5 +35,5 @@ to close any of the currently opened sockets.
 
 ## Getting help
 
-- https://github.com/ninenines/ranch/issues[Issues tracker]
-- https://ninenines.eu/services[Commercial Support]
+- [Issues tracker](https://github.com/ninenines/ranch/issues)
+- [Commercial Support](https://ninenines.eu/services)
